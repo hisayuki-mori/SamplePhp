@@ -1,0 +1,38 @@
+{
+    "name": "issei-m/spike-php",
+    "description": "The client of https://spike.cc REST api for PHP.",
+    "keywords": ["spike", "spike.cc", "payments", "rest"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Issei Murasawa",
+            "email": "issei.m7@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.4",
+        "guzzlehttp/guzzle": "~4.0",
+        "symfony/var-dumper": "~2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Issei\\Spike\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Issei\\Spike\\Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "Allows for implementation of the Guzzle ~4.0 HTTP client"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
